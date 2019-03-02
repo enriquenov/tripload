@@ -1,7 +1,7 @@
 {
-  "name": "boilermaker",
+  "name": "tripload",
   "version": "1.0.0",
-  "description": "Some boilerplate code to get you started - get shakin'!",
+  "description": "Tripload is a beautiful interface where you can plan, organize, upload and keep track of all your travel plans.",
   "engines": {
     "node": ">= 7.0.0"
   },
@@ -34,7 +34,7 @@
       "git add"
     ]
   },
-  "author": "Fullstack Academy of Code",
+  "author": "Enrique Novoa",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.15.3",
