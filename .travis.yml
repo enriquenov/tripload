@@ -16,12 +16,12 @@ install:
 before_script:
   - psql -c 'create database "tripload-test";' -U postgres # remember to change this name if you change it elsewhere (e.g. package.json)
 
-# before_deploy:
-#   - npm run build-client # make the bundle
-#   - rm -rf node_modules # omit from the tarball, since we skip cleanup
-# deploy:
-#   skip_cleanup: true # prevents travis from deleting the build
-#   provider: heroku
-#   app: YOUR-HEROKU-APP-NAME-HERE # see README
-#   api_key:
-#     secure: YOUR-***ENCRYPTED***-API-KEY-HERE # see README
+before_deploy:
+  - npm run build-client # make the bundle
+  - rm -rf node_modules # omit from the tarball, since we skip cleanup
+deploy:
+  skip_cleanup: true # prevents travis from deleting the build
+  provider: heroku
+  app: tripload # my heroku app name
+  api_key:
+    secure: iRPZxqEwj8oQAyKeIszAUX4JSK94Df3Q9svM6wVfXoZIGCCYqaGM1ukaMnfchITSAuEFw0ifpTK7rXpk8bH/rN/Vib5j/7Hyj0KXr7z1YSccAb7vhmH7ls4qM4k6AjkGvwqBZDTLuwb2XUiVU2E+HKGCTqjsQMbRriIpTNtZoch9oZO3PGSn+8A/BLPBgmYbcYyR9d6AbIvCj87ZWGJK31C64JNj6fzv59W0iqYoJqLF/20srLWPgsVk6KpuDv0URCmbtL7r3XC3dILdIcUYBR6ttYr/2R9nco3yKXGBfc7DuNVDHMx//s7MKoLEZ84LCf8m5+bpBw7MLvQr7dmLJy0ZhAUtzt2jy1jMriWgb91//LiHLuB5hQuNo5fNr0Mp3+Ai3OIljYwHj+tvf4oQyw9OszCrQm7OF5ilk9J7Fey/Z4ukLUjjalKBjvXHJ8xCRvpWHb02yzvroiPIdL5wQJHr/K14Bu9XCkS5sqCZOmqwkrECKEzTOL0aUPxz+U8AyADIrZUUwf8NCaG2h6km27HLs7oviOLhs6yPhWv3jVWxq74sou5jrrr3ywH6RSSvE3sleO1JQL7alj/52vcpMQJfC0iczlu9JTQIfQlD0NaYuvKPVAZa9cZCkokFV/IPUxT2KHPJJwCbhSvW4stLUZgq93e/2Y0Za5T8cA3gZj0= # Do Not Touch!
