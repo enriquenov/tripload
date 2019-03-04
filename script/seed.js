@@ -1,7 +1,7 @@
 'use strict'
 
 const db = require('../server/db')
-const {User, Trip, Adventure} = require('../server/db/models')
+const {User, Trip, Adventure, Transition} = require('../server/db/models')
 
 async function seed() {
   await db.sync({force: true})
@@ -27,11 +27,13 @@ async function seed() {
   const trips = await Promise.all([
     Trip.create({
       name: 'Portugal & Spain - 2019',
-      upcoming: true
+      upcoming: true,
+      userId: 1
     }),
     Trip.create({
       name: 'Ireland!',
-      upcoming: false
+      upcoming: false,
+      userId: 1
     })
   ])
 
@@ -39,17 +41,31 @@ async function seed() {
 
   const adventures = await Promise.all([
     Adventure.create({
-      name: 'Madeira'
+      name: 'Madeira',
+      tripId: 1
     }),
     Adventure.create({
-      name: 'Coimbra!'
+      name: 'Coimbra!',
+      tripId: 1
     }),
     Adventure.create({
-      name: 'Lisbon'
+      name: 'Lisbon',
+      tripId: 1
     })
   ])
 
   console.log(`seeded ${adventures.length} adventures`)
+
+  const transitions = await Promise.all([
+    Transition.create({
+      tripId: 1
+    }),
+    Transition.create({
+      tripId: 1
+    })
+  ])
+
+  console.log(`seeded ${transitions.length} transitions`)
   console.log(`seeded successfully`)
 }
 

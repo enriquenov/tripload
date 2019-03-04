@@ -8,7 +8,8 @@ const Transition = db.define('transition', {
     defaultValue: 'Cross-adventure'
   },
   type: {
-    type: Sequelize.ENUM('Ground', 'Air', 'Ocean')
+    type: Sequelize.ENUM('Ground', 'Air', 'Ocean'),
+    allowNull: true
   }
 })
 
