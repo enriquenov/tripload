@@ -15,7 +15,8 @@ const Trip = db.define('trip', {
     allowNull: true
   },
   status: {
-    type: Sequelize.ENUM('open', 'archived')
+    type: Sequelize.ENUM('open', 'archived'),
+    defaultValue: 'open'
   },
   upcoming: {
     type: Sequelize.BOOLEAN,
