@@ -22,7 +22,6 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: #fff;
 }
 
 .navbar .logo {
@@ -31,6 +30,7 @@ label {
 
 .navbar .logo h1 {
   margin: 20px 0;
+  color: #fff;
 }
 
 nav {
