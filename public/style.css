@@ -14,6 +14,13 @@ label {
   display: block;
 }
 
+/* HELPERS */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: tomato;
+}
+
 /* NAVBAR */
 .navbar {
   padding-left: 2%;
@@ -44,6 +51,11 @@ nav a {
   align-self: center;
   margin: 1em;
   color: #fff;
+}
+
+/* HOME */
+.home h1 {
+  font-size: 3em;
 }
 
 form div {
