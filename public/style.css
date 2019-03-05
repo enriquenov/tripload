@@ -18,7 +18,6 @@ label {
 .container {
   width: 80%;
   margin: 0 auto;
-  background-color: tomato;
 }
 
 /* NAVBAR */
@@ -60,7 +59,12 @@ nav a {
 }
 
 .top-section h1 {
-  font-size: 3em;
+  font-size: 2.5em;
+}
+
+.top-section img {
+  width: 50%;
+  align-self: center;
 }
 
 form div {
