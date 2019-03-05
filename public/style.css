@@ -54,7 +54,12 @@ nav a {
 }
 
 /* HOME */
-.home h1 {
+.top-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-section h1 {
   font-size: 3em;
 }
 
