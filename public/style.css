@@ -54,11 +54,13 @@ nav a {
 
 /* HOME */
 .top-section {
+  margin-top: 80px;
   display: flex;
   flex-direction: row;
 }
 
 .top-section h1 {
+  padding-right: 60px;
   font-size: 2.5em;
 }
 
