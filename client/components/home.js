@@ -5,8 +5,16 @@ import React from 'react'
  */
 const Home = () => {
   return (
-    <div>
-      <h3>You're seeing this if you're logged off!</h3>
+    <div className="container">
+      <div className="home">
+        <div className="top-section">
+          <h1>
+            TripLoad is a beautiful interface where you can plan, organize,
+            upload documents and keep track of all your travel plans.
+          </h1>
+          <img src="../img/productivity.png" />
+        </div>
+      </div>
     </div>
   )
 }

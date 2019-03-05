@@ -14,6 +14,12 @@ label {
   display: block;
 }
 
+/* HELPERS */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* NAVBAR */
 .navbar {
   padding-left: 2%;
@@ -44,6 +50,23 @@ nav a {
   align-self: center;
   margin: 1em;
   color: #fff;
+}
+
+/* HOME */
+.top-section {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-section h1 {
+  padding-right: 60px;
+  font-size: 2.5em;
+}
+
+.top-section img {
+  width: 50%;
+  align-self: center;
 }
 
 form div {
