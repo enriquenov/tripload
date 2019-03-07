@@ -17,7 +17,7 @@ router.get('/', async (req, res, next) => {
   }
 })
 
-// GET api/users/:userId
+// GET api/users/:userId/yourtrips
 router.get('/:userId/yourtrips', async (req, res, next) => {
   try {
     const trips = await Trip.findAll({

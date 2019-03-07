@@ -8,7 +8,7 @@ const GET_TRIPS = 'GET_TRIPS'
 /**
  * INITIAL STATE
  */
-const defaultTrips = {}
+const defaultTrips = []
 
 /**
  * ACTION CREATORS
