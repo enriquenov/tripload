@@ -146,3 +146,33 @@ nav a {
   background-color: #bbb;
   color: #4285f6;
 }
+
+/* SINGLE TRIP CARD */
+.trips-cards-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.trip-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: lightyellow;
+  width: 350px;
+  height: 150px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid green;
+}
+
+.trip-card h3,
+.trip-card p {
+  margin: 0;
+}
+
+.trip-card .fa-star {
+  color: gold;
+}
