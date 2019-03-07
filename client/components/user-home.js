@@ -8,14 +8,13 @@ import SingleTripCard from './SingleTripCard'
  * COMPONENT
  */
 
-class UserHome extends React.Component {
+export class UserHome extends React.Component {
   componentDidMount() {
-    this.props.fetchTrips(this.props.user.id)
+    this.props.fetchTrips(this.props.userId)
   }
 
   render() {
-    console.log('PROPS: ', this.props)
-    const {firstName} = this.props.user
+    const {firstName} = this.props
     return (
       <div className="container">
         <h3>Hi, {firstName}!</h3>
@@ -40,7 +39,8 @@ class UserHome extends React.Component {
  * CONTAINER
  */
 const mapState = state => ({
-  user: state.user,
+  firstName: state.user.firstName,
+  userId: state.user.id,
   trips: state.trip
 })
 
