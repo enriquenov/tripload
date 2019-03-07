@@ -34,6 +34,16 @@ async function seed() {
       name: 'Ireland!',
       upcoming: false,
       userId: 1
+    }),
+    Trip.create({
+      name: 'Portugal & Spain - 2019',
+      upcoming: true,
+      userId: 2
+    }),
+    Trip.create({
+      name: 'England & Ireland!',
+      upcoming: false,
+      userId: 2
     })
   ])
 

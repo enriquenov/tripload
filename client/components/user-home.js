@@ -21,7 +21,7 @@ class UserHome extends React.Component {
         <h3>Hi, {firstName}!</h3>
         <p>Here are your current trips:</p>
 
-        <div>
+        <div className="trips-cards-container">
           {!this.props.trips.length ? (
             <p>Loading...</p>
           ) : (
