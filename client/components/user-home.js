@@ -16,19 +16,21 @@ export class UserHome extends React.Component {
   render() {
     const {firstName} = this.props
     return (
-      <div className="container">
-        <h3>Hi, {firstName}!</h3>
-        <p>Here are your current trips:</p>
+      <div className="container-fluid home">
+        <h4>Hi, {firstName}!</h4>
+        <div className="container">
+          <h2 className="main-title">Your Trips</h2>
 
-        <div className="trips-cards-container">
-          {!this.props.trips.length ? (
-            <p>Loading...</p>
-          ) : (
-            this.props.trips.map(trip => {
-              console.log('TRIP', trip)
-              return <SingleTripCard key={trip.id} trip={trip} />
-            })
-          )}
+          <div className="trips-cards-container">
+            {!this.props.trips.length ? (
+              <p>Loading...</p>
+            ) : (
+              this.props.trips.map(trip => {
+                console.log('TRIP', trip)
+                return <SingleTripCard key={trip.id} trip={trip} />
+              })
+            )}
+          </div>
         </div>
       </div>
     )

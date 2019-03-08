@@ -1,9 +1,10 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const SingleTripCard = props => {
   const {name, upcoming} = props.trip
   return (
-    <div className="trip-card">
+    <Link to="/yourtrips" className="trip-card">
       <h3>{name}</h3>
 
       {upcoming && (
@@ -11,7 +12,7 @@ const SingleTripCard = props => {
           <i className="fa fa-star" /> Upcoming
         </p>
       )}
-    </div>
+    </Link>
   )
 }
 

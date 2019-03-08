@@ -31,7 +31,17 @@ async function seed() {
       userId: 1
     }),
     Trip.create({
-      name: 'Ireland!',
+      name: 'England & Ireland!',
+      upcoming: false,
+      userId: 1
+    }),
+    Trip.create({
+      name: 'Back to Peru!',
+      upcoming: false,
+      userId: 1
+    }),
+    Trip.create({
+      name: 'Maybe Maimi?',
       upcoming: false,
       userId: 1
     }),
