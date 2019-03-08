@@ -26,7 +26,6 @@ export class UserHome extends React.Component {
               <p>Loading...</p>
             ) : (
               this.props.trips.map(trip => {
-                console.log('TRIP', trip)
                 return <SingleTripCard key={trip.id} trip={trip} />
               })
             )}
