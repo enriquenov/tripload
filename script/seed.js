@@ -69,6 +69,18 @@ async function seed() {
       tripId: 1
     }),
     Adventure.create({
+      name: 'Ourense',
+      tripId: 1
+    }),
+    Adventure.create({
+      name: 'Santiago de Compostela',
+      tripId: 1
+    }),
+    Adventure.create({
+      name: 'Porto',
+      tripId: 1
+    }),
+    Adventure.create({
       name: 'Lisbon',
       tripId: 1
     })
