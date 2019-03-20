@@ -2,9 +2,9 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 const SingleTripCard = props => {
-  const {name, upcoming} = props.trip
+  const {name, upcoming, id} = props.trip
   return (
-    <Link to="/yourtrips" className="trip-card">
+    <Link to={`/yourtrips/${id}`} className="trip-card">
       <h3>{name}</h3>
 
       {upcoming && (
