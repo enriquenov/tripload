@@ -30,3 +30,19 @@ router.get('/:userId/yourtrips', async (req, res, next) => {
     next(err)
   }
 })
+
+// GET api/users/:userId/yourtrips/:tripId
+router.get('/:userId/yourtrips/:tripId', async (req, res, next) => {
+  try {
+    const trip = await Trip.findOne({
+      where: {
+        id: req.params.tripId,
+        userId: req.params.userId
+      },
+      include: 'adventures'
+    })
+    res.json(trip)
+  } catch (err) {
+    next(err)
+  }
+})
