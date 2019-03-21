@@ -197,3 +197,8 @@ nav a {
 .trip-card .fa-star {
   color: gold;
 }
+
+/* SINGLE TRIP NAVBAR */
+.trip-navbar {
+  border: 1px solid red;
+}

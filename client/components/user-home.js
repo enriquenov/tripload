@@ -42,7 +42,7 @@ export class UserHome extends React.Component {
 const mapState = state => ({
   firstName: state.user.firstName,
   userId: state.user.id,
-  trips: state.trip
+  trips: state.trips
 })
 
 const mapDispatch = dispatch => ({
@@ -55,5 +55,6 @@ export default connect(mapState, mapDispatch)(UserHome)
  * PROP TYPES
  */
 UserHome.propTypes = {
-  firstName: PropTypes.string
+  firstName: PropTypes.string,
+  userId: PropTypes.number
 }
