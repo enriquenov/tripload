@@ -63,6 +63,11 @@ nav a {
   color: #fff;
 }
 
+/* NAVBAR TWO*/
+.navbar-two {
+  border: 2px solid red;
+}
+
 /* HOME */
 .top-section {
   margin-top: 80px;
