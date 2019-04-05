@@ -42,7 +42,7 @@ label {
 }
 
 .navbar .logo {
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .navbar .logo h1 {
@@ -65,7 +65,8 @@ nav a {
 
 /* NAVBAR TWO*/
 .navbar-two {
-  border: 2px solid red;
+  margin: 0 20px;
+  /* border: 2px solid red; */
 }
 
 /* HOME */
